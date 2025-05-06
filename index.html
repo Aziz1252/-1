@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-<meta charset="UTF-8">
-
-        
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeFest 2024 - паоылаол!</title>
+    <title>CodeFest 2024 - День Программирования!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +16,10 @@
             background-color: #f0f0f0;
             color: #333;
             line-height: 1.6;
-            overflow-x: hidden; /* Ïðåäîòâðàùàåò ãîðèçîíòàëüíóþ ïðîêðóòêó */
+            overflow-x: hidden; /* Предотвращает горизонтальную прокрутку */
         }
 
-        /*Îáùèå ñòèëè*/
+        /*Общие стили*/
         .cta-button {
             background-color: #00BF8F;
             color: #fff;
@@ -33,7 +29,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             display: inline-block;
-            text-decoration: none; /*Óäàëÿåò ïîä÷åðêèâàíèå ññûëêè*/
+            text-decoration: none; /*Удаляет подчеркивание ссылки*/
         }
 
             .cta-button:hover {
@@ -43,7 +39,7 @@
         .container {
             width: 80%;
             margin: 0 auto;
-            max-width: 1200px; /* Îãðàíè÷åíèå ìàêñèìàëüíîé øèðèíû êîíòåíòà */
+            max-width: 1200px; /* Ограничение максимальной ширины контента */
             padding: 20px;
         }
 
@@ -51,14 +47,14 @@
             padding: 60px 0;
         }
 
-        /*Ñòèëè äëÿ øàïêè è íàâèãàöèè*/
+        /*Стили для шапки и навигации*/
         header {
-            background: linear-gradient(to right, #00BF8F, #001510); /* Ãðàäèåíòíûé ôîí */
+            background: linear-gradient(to right, #00BF8F, #001510); /* Градиентный фон */
             color: #fff;
             padding: 20px 0;
             text-align: center;
             position: relative;
-            overflow: hidden; /* Îáðåçàåò âûõîäÿùèå çà ãðàíèöû ýëåìåíòû */
+            overflow: hidden; /* Обрезает выходящие за границы элементы */
         }
 
         nav {
@@ -74,7 +70,7 @@
         }
 
             .logo span {
-                color: #ffd700; /* Æåëòûé àêöåíò */
+                color: #ffd700; /* Желтый акцент */
             }
 
         nav ul {
@@ -98,7 +94,7 @@
                         color: #ffd700;
                     }
 
-        /*Ñòèëè äëÿ Hero-ñåêöèè*/
+        /*Стили для Hero-секции*/
         .hero {
             padding: 80px 0;
         }
@@ -113,7 +109,7 @@
                 margin-bottom: 30px;
             }
 
-        /*Ñòèëè äëÿ ñåêöèé ñîäåðæèìîãî*/
+        /*Стили для секций содержимого*/
         .section h2 {
             font-size: 2.5em;
             margin-bottom: 30px;
@@ -124,7 +120,7 @@
             text-align: justify;
         }
 
-        /*Ñòèëè äëÿ ñåòêè ðàñïèñàíèÿ*/
+        /*Стили для сетки расписания*/
         .schedule-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -147,7 +143,7 @@
                 margin-bottom: 10px;
             }
 
-        /*Ñòèëè äëÿ ñåòêè ñïèêåðîâ*/
+        /*Стили для сетки спикеров*/
         .speakers-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -170,7 +166,7 @@
                 margin-bottom: 10px;
             }
 
-        /*Ñòèëè äëÿ ïîäâàëà*/
+        /*Стили для подвала*/
         footer {
             background-color: #333;
             color: #fff;
@@ -247,7 +243,7 @@
                 background-color: #00BF8F;
             }
 
-        /* Äîáàâëÿåì àäàïòèâíûå ñòèëè */
+        /* Добавляем адаптивные стили */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -280,60 +276,60 @@
         <nav>
             <div class="logo">DigitalForest <span>2025</span></div>
             <ul>
-                <li><a href="#about">рлваылвраолыало</a></li>
-                <li><a href="#schedule">проооырв</a></li>
-                <li><a href="#speakers">Ñïèêåðû</a></li>
-                <li><a href="#register">Ðåãèñòðàöèÿ</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#speakers">Спикеры</a></li>
+                <li><a href="#register">Регистрация</a></li>
             </ul>
         </nav>
         <div class="hero">
-            <h1>Îòïðàçäíóéòå äåíü ïðîãðàììèðîâàíèÿ ñ DigitalForest!</h1>
-            <p>Ïðèñîåäèíÿéòåñü ê êðóïíåéøåìó IT-ñîáûòèþ ãîäà. Íîâûå çíàíèÿ è âäîõíîâåíèå æäóò âàñ!</p>
-            <a href="#register" class="cta-button">Çàðåãèñòðèðîâàòüñÿ ñåé÷àñ!</a>
+            <h1>Отпразднуйте день программирования с DigitalForest!</h1>
+            <p>Присоединяйтесь к крупнейшему IT-событию года. Новые знания и вдохновение ждут вас!</p>
+            <a href="#register" class="cta-button">Зарегистрироваться сейчас!</a>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
-            <h2>Î DigitalForest</h2>
-            <p>DigitalForest - ýòî åæåãîäíîå ìåðîïðèÿòèå, ïîñâÿùåííîå äíþ ïðîãðàììèðîâàíèÿ. Ìû ñîáèðàåì ëó÷øèõ ýêñïåðòîâ, òàëàíòëèâûõ ðàçðàáîò÷èêîâ è íà÷èíàþùèõ ïðîãðàììèñòîâ, ÷òîáû ïîäåëèòüñÿ çíàíèÿìè, îïûòîì è âäîõíîâåíèåì. </p>
-            <p>Â ýòîì ãîäó âàñ æäóò óâëåêàòåëüíûå äîêëàäû, èíòåðàêòèâíûå âîðêøîïû, çàõâàòûâàþùèé õàêàòîí è ìîðå ïîçèòèâíûõ ýìîöèé! Íå óïóñòèòå øàíñ ñòàòü ÷àñòüþ DigitalForest 2025!</p>
+            <h2>О DigitalForest</h2>
+            <p>DigitalForest - это ежегодное мероприятие, посвященное дню программирования. Мы собираем лучших экспертов, талантливых разработчиков и начинающих программистов, чтобы поделиться знаниями, опытом и вдохновением. </p>
+            <p>В этом году вас ждут увлекательные доклады, интерактивные воркшопы, захватывающий хакатон и море позитивных эмоций! Не упустите шанс стать частью DigitalForest 2025!</p>
         </div>
     </section>
 
     <section id="schedule" class="section">
         <div class="container">
-            <h2>Ðàñïèñàíèå ìåðîïðèÿòèé</h2>
+            <h2>Расписание мероприятий</h2>
             <div class="schedule-grid">
                 <div class="schedule-item">
                     <h3>10:00 - 11:00</h3>
-                    <h4>Ðåãèñòðàöèÿ</h4>
-                    <p>Íà÷íèòå äåíü ñ ðåãèñòðàöèè è çíàêîìñòâà ñ ó÷àñòíèêàìè!</p>
+                    <h4>Регистрация</h4>
+                    <p>Начните день с регистрации и знакомства с участниками!</p>
                 </div>
                 <div class="schedule-item">
                     <h3>11:00 - 11:30</h3>
-                    <h4>Äîêëàä î ïðîèñõîæäåíèè ïðàçäíèêà</h4>
-                    <p>Ñïèêåð: Âèêòîðèÿ Êîêîðåâà</p>
+                    <h4>Доклад о происхождении праздника</h4>
+                    <p>Спикер: Виктория Кокорева</p>
                 </div>
                 <div class="schedule-item">
                     <h3>11:30 - 13:00</h3>
-                    <h4>Ðàçðàáîòêà ìèíè-èãðû</h4>
-                    <p>Âåäóùèé: Àçèç Èñõàêîâ, îïûòíûé ðàçðàáîò÷èê èãð.</p>
+                    <h4>Разработка мини-игры</h4>
+                    <p>Ведущий: Азиз Исхаков, опытный разработчик игр.</p>
                 </div>
                 <div class="schedule-item">
                     <h3>13:00 - 14:00</h3>
-                    <h4>Îáåä</h4>
-                    <p>Âðåìÿ äëÿ îòäûõà è îáùåíèÿ çà âêóñíûì îáåäîì.</p>
+                    <h4>Обед</h4>
+                    <p>Время для отдыха и общения за вкусным обедом.</p>
                 </div>
                 <div class="schedule-item">
                     <h3>14:00 - 17:00</h3>
-                    <h4>Ñîçäàé ñâîé ïðîåêò!</h4>
-                    <p>Ñîðåâíóéòåñü ñ äðóãèìè êîìàíäàìè è ðàçðàáîòàéòå èííîâàöèîííûé ïðîåêò.</p>
+                    <h4>Создай свой проект!</h4>
+                    <p>Соревнуйтесь с другими командами и разработайте инновационный проект.</p>
                 </div>
                 <div class="schedule-item">
                     <h3>17:00 - 18:00</h3>
-                    <h4>Ïîäâåäåíèå èòîãîâ è íàãðàæäåíèå ïîáåäèòåëåé</h4>
-                    <p>Óçíàéòå, êòî ñòàë ëó÷øèì â ñîðåâíîâàíèè, è ïîëó÷èòå öåííûå ïðèçû!</p>
+                    <h4>Подведение итогов и награждение победителей</h4>
+                    <p>Узнайте, кто стал лучшим в соревновании, и получите ценные призы!</p>
                 </div>
             </div>
         </div>
@@ -341,22 +337,22 @@
 
     <section id="speakers" class="section">
         <div class="container">
-            <h2>Íàøè âåäóùèå</h2>
+            <h2>Наши ведущие</h2>
             <div class="speakers-grid">
                 <div class="speaker-card">
-                    <img src="images/ðîáîò1.jpg" alt="Àííà Ñìèðíîâà">
-                    <h3>Åêàòåðèíà Ñìèðíîâà</h3>
-                    <p>Îðãàíèçàòîð</p>
+                    <img src="images/робот1.jpg" alt="Анна Смирнова">
+                    <h3>Екатерина Смирнова</h3>
+                    <p>Организатор</p>
                 </div>
                 <div class="speaker-card">
-                    <img src="images/ðîáîò2.jpg" alt="Èâàí Ïåòðîâ">
-                    <h3>Àçèç Èñõàêîâ</h3>
-                    <p>Îïûòíûé ðàçðàáîò÷èê èãð</p>
+                    <img src="images/робот2.jpg" alt="Иван Петров">
+                    <h3>Азиз Исхаков</h3>
+                    <p>Опытный разработчик игр</p>
                 </div>
                 <div class="speaker-card">
-                    <img src="images/ðîáîò3.webp" alt="Åëåíà Ñèäîðîâà">
-                    <h3>Âèêòîðèÿ Êîêîðåâà</h3>
-                    <p>Ñïåöèàëèñò ïî êèáåðáåçîïàñíîñòè</p>
+                    <img src="images/робот3.webp" alt="Елена Сидорова">
+                    <h3>Виктория Кокорева</h3>
+                    <p>Специалист по кибербезопасности</p>
                 </div>
             </div>
         </div>
@@ -364,74 +360,74 @@
 
     <section id="register" class="section">
         <div class="container">
-            <h2>Ðåãèñòðàöèÿ íà DigitalForest 2025</h2>
-            <p>Íå óïóñòèòå âîçìîæíîñòü ïðèíÿòü ó÷àñòèå â ñàìîì ìàñøòàáíîì IT-ñîáûòèè ãîäà!</p>
-            <button id="open-registration-form" class="cta-button">Çàðåãèñòðèðîâàòüñÿ</button>
+            <h2>Регистрация на DigitalForest 2025</h2>
+            <p>Не упустите возможность принять участие в самом масштабном IT-событии года!</p>
+            <button id="open-registration-form" class="cta-button">Зарегистрироваться</button>
 
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 DigitalForest. Âñå ïðàâà çàùèùåíû.</p>
+        <p>&copy; 2025 DigitalForest. Все права защищены.</p>
     </footer>
 
-    <!-- Ðåãèñòðàöèîííàÿ ôîðìà (ïî óìîë÷àíèþ ñêðûòà) -->
+    <!-- Регистрационная форма (по умолчанию скрыта) -->
     <div id="registration-form" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <h2>Ðåãèñòðàöèÿ</h2>
+            <h2>Регистрация</h2>
             <form id="registrationForm">
-                <label for="name">Èìÿ:</label>
-                <input type="text" id="name" value="student"><!--Ñòóäåíò--></option>
-                <!--<option value="developer">Ðàçðàáîò÷èê</option>
-    <option value="designer">Äèçàéíåð</option>
-    <option value="other">Äðóãîå</option>
-                <!--<button type="submit">Ïîäòâåðäèòü ðåãèñòðàöèþ</button>-->
-                <button onclick="alert('Ñïàñèáî çà ðåãèñòðàöèþ!');" type="submit">Ïîäòâåðäèòü ðåãèñòðàöèþ</button>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" value="student"><!--Студент--></option>
+                <!--<option value="developer">Разработчик</option>
+    <option value="designer">Дизайнер</option>
+    <option value="other">Другое</option>
+                <!--<button type="submit">Подтвердить регистрацию</button>-->
+                <button onclick="alert('Спасибо за регистрацию!');" type="submit">Подтвердить регистрацию</button>
             </form>
         </div>
     </div>
     <script>
-        // Ïîëó÷àåì ýëåìåíòû
+        // Получаем элементы
         const registrationFormModal = document.getElementById("registration-form");
         const openRegistrationButton = document.getElementById("open-registration-form");
         const closeRegistrationButton = document.querySelector(".close-button");
         const registrationForm = document.getElementById("registrationForm");
 
-        // Îòêðûòèå ìîäàëüíîãî îêíà
+        // Открытие модального окна
         openRegistrationButton.addEventListener("click", () => {
             registrationFormModal.style.display = "block";
         });
 
-        // Çàêðûòèå ìîäàëüíîãî îêíà
+        // Закрытие модального окна
         closeRegistrationButton.addEventListener("click", () => {
             registrationFormModal.style.display = "none";
         });
 
-        // Çàêðûòèå ìîäàëüíîãî îêíà ïðè êëèêå âíå åãî
+        // Закрытие модального окна при клике вне его
         window.addEventListener("click", (event) => {
             if (event.target === registrationFormModal) {
                 registrationFormModal.style.display = "none";
             }
         });
 
-        //Îáðàáîòêà îòïðàâêè ôîðìû (ïðèìåð, âûâîäèò äàííûå â êîíñîëü)
+        //Обработка отправки формы (пример, выводит данные в консоль)
         registrationForm.addEventListener("submit", (event) => {
-            event.preventDefault(); // Ïðåäîòâðàùàåì îòïðàâêó ôîðìû ïî óìîë÷àíèþ
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const profession = document.getElementById("profession").value;
 
-            console.log("Èìÿ:", name);
+            console.log("Имя:", name);
             console.log("Email:", email);
-            console.log("Ïðîôåññèÿ:", profession);
+            console.log("Профессия:", profession);
 
-            // Çäåñü ìîæíî äîáàâèòü êîä äëÿ îòïðàâêè äàííûõ íà ñåðâåð
-            // Íàïðèìåð, ñ ïîìîùüþ fetch API
+            // Здесь можно добавить код для отправки данных на сервер
+            // Например, с помощью fetch API
 
-            registrationFormModal.style.display = "none"; // Çàêðûâàåì îêíî ïîñëå îòïðàâêè
-            alert("Ðåãèñòðàöèÿ ïðîøëà óñïåøíî!"); //Ñîîáùàåì îá óñïåøíîé ðåãèñòðàöèè
+            registrationFormModal.style.display = "none"; // Закрываем окно после отправки
+            alert("Регистрация прошла успешно!"); //Сообщаем об успешной регистрации
         });
     </script>
 
