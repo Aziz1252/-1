@@ -295,7 +295,42 @@
             <p>DigitalForest - это ежегодное мероприятие, посвященное дню программирования. Мы собираем лучших экспертов, талантливых разработчиков и начинающих программистов, чтобы поделиться знаниями, опытом и вдохновением. </p>
             <p>В этом году вас ждут увлекательные доклады, интерактивные воркшопы, захватывающий хакатон и море позитивных эмоций! Не упустите шанс стать частью DigitalForest 2025!</p>
             <h2>Место проведения</h2>
-            <h4>Шипиловский пр. 37, корп. 1, Москва, 115569</h4>
+            #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Моя карта</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Координаты метки (широта, долгота)
+            const myLatLng = { lat: 55.751244, lng: 37.618423 }; // Пример: Москва, Красная площадь
+
+            // Создаем карту
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12, // Масштаб карты
+                center: myLatLng, // Центр карты
+            });
+
+            // Создаем метку
+            const marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "Красная площадь", // Заголовок метки (отображается при наведении)
+            });
+        }
+    </script>
+
+    <!-- Подключаем Google Maps JavaScript API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
         </div>
     </section>
 
