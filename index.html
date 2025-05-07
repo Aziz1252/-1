@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -294,43 +298,32 @@
             <h2>О DigitalForest</h2>
             <p>DigitalForest - это ежегодное мероприятие, посвященное дню программирования. Мы собираем лучших экспертов, талантливых разработчиков и начинающих программистов, чтобы поделиться знаниями, опытом и вдохновением. </p>
             <p>В этом году вас ждут увлекательные доклады, интерактивные воркшопы, захватывающий хакатон и море позитивных эмоций! Не упустите шанс стать частью DigitalForest 2025!</p>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+          
             <h2>Место проведения</h2>
-            #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <h1>Моя карта</h1>
-    <div id="map"></div>
+                <div id="map"></div>
+                <script>
+                    ymaps.ready(init);
 
-    <script>
-        function initMap() {
-            // Координаты метки (широта, долгота)
-            const myLatLng = { lat: 55.751244, lng: 37.618423 }; // Пример: Москва, Красная площадь
+                    function init() {
+                    
+                        var myMap = new ymaps.Map("map", {
+                            center: [55.613331, 37.696364],
+                            zoom: 16
+                        });
 
-            // Создаем карту
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 12, // Масштаб карты
-                center: myLatLng, // Центр карты
-            });
+                        // Создаем метку
+                        var myPlacemark = new ymaps.Placemark([55.613331, 37.696364], {
+                            hintContent: 'Шипиловский пр. 37, корп. 1',
+                            balloonContent: 'Адрес: Шипиловский пр. 37, корп. 1, Москва, 115569'
+                        }, {
+                            preset: 'islands#redDotIcon' // Стиль метки
+                        });
 
-            // Создаем метку
-            const marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: "Красная площадь", // Заголовок метки (отображается при наведении)
-            });
-        }
-    </script>
-
-    <!-- Подключаем Google Maps JavaScript API -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-      async
-      defer
-    ></script>
+                        // Добавляем метку на карту
+                        myMap.geoObjects.add(myPlacemark);
+                    }
+                </script>
         </div>
     </section>
 
